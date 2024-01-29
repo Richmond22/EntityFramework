@@ -1,4 +1,5 @@
 //Create database context called demoDbContext  which is inherited from DbContext class and it will be used to perform CRUD operations on database.     
+using demo_api.Domain;
 using Microsoft.EntityFrameworkCore;
 
 namespace demo_api.Infrastructure
@@ -9,6 +10,6 @@ namespace demo_api.Infrastructure
         {
         }
 
-        public DbSet<demo> demo { get; set; }
+        public DbSet<Book> Books { get; set; }
     }
 }
